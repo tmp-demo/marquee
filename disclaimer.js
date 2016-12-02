@@ -1,5 +1,5 @@
 function disclaimer(callback){
-
+  document.getElementById('disclaimer').classList.toggle('hidden');
   var intervalDisclaimer;
 
   var disclaimer = document.querySelector('#disclaimer');
@@ -26,6 +26,7 @@ function disclaimer(callback){
 
   disclaimerMarquee.addEventListener("finish",function(){
     clearInterval(intervalDisclaimer);
+    document.getElementById('disclaimer').classList.toggle('hidden');
     callback();
   });
 

@@ -1,0 +1,3 @@
+function greets(callback){
+  callback();
+}

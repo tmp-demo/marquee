@@ -3,7 +3,11 @@ var allthemarquee = {
   callback:null,
   lvlup: function(i = 1){
     this.count+=i;
-    this.callback();
+    if(!this.callback){
+      console.log('callback not set');
+    }else{
+      this.callback();
+    }
   },
   init:function(cb){
     this.callback = cb;

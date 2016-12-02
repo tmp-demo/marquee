@@ -1,1 +1,12 @@
-var allthemarquee = {count: 0, lvlup: function(i = 1, callback){this.count+=i; callback();}};
+var allthemarquee = {
+  count: null,
+  callback:null,
+  lvlup: function(i = 1){
+    this.count+=i;
+    callback();
+  },
+  init:function(cb){
+    this.callback = cb;
+    this.count = 0;
+  }
+};

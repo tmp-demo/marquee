@@ -129,6 +129,8 @@ body {
   font-family: arial, sans-serif;
   font-size: 10px;
   color: white; }
+  body .hidden {
+    display: none; }
   body #marquee-counter {
     position: absolute;
     top: 0;

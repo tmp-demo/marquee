@@ -159,8 +159,18 @@ main {
       height: 100%;
       width: 100%; }
     main #title #titleV {
-      height: 100%;
-      font-size: 1500%; }
+      height: 100%; }
+      main #title #titleV div {
+        font-size: 2500%;
+        text-align: center; }
+  main #greets {
+    height: 100%; }
+    main #greets .marquee-container {
+      position: absolute;
+      width: 100%;
+      left: 0; }
+      main #greets .marquee-container marquee {
+        height: 250px; }
   main footer {
     position: absolute;
     bottom: 50px;

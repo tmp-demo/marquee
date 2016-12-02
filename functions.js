@@ -3,11 +3,17 @@ allthemarquee.init(function(){
   document.getElementById('marquee-counter').innerHTML = this.count;
 });
 
-//disclaimer(function(){
+disclaimer(function(){
   title(function(){
-    console.log('finish title');
-    bottomScroller(function(){
-      console.log("finish bottomScroller");
-    })
+    bottomScroller(function(){});
+    snake(function(){
+      check(function(){
+        moire(function(){
+          greets(function(){
+            starfield(function(){console.log('END');});
+          });
+        });
+      });
+    });
   });
-//});
+});

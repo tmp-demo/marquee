@@ -124,13 +124,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body,
+html {
+  width: 100%;
+  height: 100%; }
+
 body {
   background-color: black;
   font-family: arial, sans-serif;
   font-size: 10px;
   color: white; }
-  body .hidden {
-    display: none; }
   body #marquee-counter {
     position: absolute;
     top: 0;
@@ -140,19 +143,32 @@ body {
     color: red;
     font-size: 250%;
     text-align: right; }
-  body footer {
+
+main {
+  height: 100%; }
+  main .hidden {
+    display: none; }
+  main #disclaimer {
+    position: absolute;
+    bottom: 50px; }
+    main #disclaimer marquee {
+      font-size: 500%; }
+  main #title {
+    height: 100%; }
+    main #title #titleH {
+      height: 100%;
+      width: 100%; }
+    main #title #titleV {
+      height: 100%;
+      font-size: 1500%; }
+  main footer {
     position: absolute;
     bottom: 50px;
     height: 150px;
     width: 1920px;
     background-color: red;
     z-index: 99999; }
-  body .scroller-letter {
+  main .scroller-letter {
     float: left;
     width: 15px;
     height: 150px; }
-  body #disclaimer {
-    position: absolute;
-    bottom: 50px; }
-    body #disclaimer marquee {
-      font-size: 500%; }

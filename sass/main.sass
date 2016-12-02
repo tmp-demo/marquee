@@ -8,9 +8,6 @@ body
   font-size: 10px
   color: white
 
-  .hidden
-    display: none
-
   #marquee-counter
     position: absolute
     top: 0
@@ -20,6 +17,27 @@ body
     color: red
     font-size: 250%
     text-align: right
+
+main
+  height: 100%
+
+  .hidden
+    display: none
+
+  #disclaimer
+    position: absolute
+    bottom: 50px
+    marquee
+      font-size: 500%
+
+  #title
+    height: 100%
+    #titleH
+      height: 100%    
+      width: 100%
+    #titleV
+      height: 100%      
+      font-size: 1500%
 
   footer
     position: absolute
@@ -32,11 +50,4 @@ body
   .scroller-letter
     float: left
     width: 15px
-    height: 150px    
-
-  #disclaimer
-    position: absolute
-    bottom: 50px
-
-    marquee
-      font-size: 500%
+    height: 150px

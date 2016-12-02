@@ -1,0 +1,3 @@
+function starfield(callback){
+  callback();
+}

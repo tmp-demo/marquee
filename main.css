@@ -134,20 +134,33 @@ body {
   font-family: arial, sans-serif;
   font-size: 10px;
   color: white; }
-  body #marquee-counter {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    width: 200px;
-    color: red;
-    font-size: 250%;
-    text-align: right; }
+
+#marquee-counter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  width: 200px;
+  color: red;
+  font-size: 250%;
+  text-align: right; }
+
+#marquee-counter.sush {
+  visibility: hidden; }
 
 main {
-  height: 100%; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
   main .hidden {
     display: none; }
+  main #starter marquee {
+    margin-top: calc((100vh / 2) - 50px);
+    height: 50px;
+    font-size: 350%; }
   main #disclaimer {
     position: absolute;
     bottom: 50px; }
@@ -182,3 +195,82 @@ main {
     float: left;
     width: 15px;
     height: 150px; }
+<<<<<<< HEAD
+=======
+  main #disclaimer {
+    position: absolute;
+    bottom: 50px; }
+    main #disclaimer marquee {
+      font-size: 500%; }
+  main #snake {
+    width: 100%;
+    height: 100%;
+    margin: auto; }
+    main #snake .snake-layer {
+      width: 80%;
+      height: 80%;
+      margin: auto;
+      position: absolute;
+      top: 10%;
+      left: 10%; }
+      main #snake .snake-layer .snake-horiz {
+        height: 100%;
+        width: 100%; }
+        main #snake .snake-layer .snake-horiz .snake-vert {
+          height: 100%; }
+          main #snake .snake-layer .snake-horiz .snake-vert .snake-elem {
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            border-radius: 60px;
+            background: radial-gradient(red, yellow, green); }
+<<<<<<< HEAD
+>>>>>>> 07e6799... snake a bit
+=======
+  main #starfield {
+    width: 100%;
+    height: 100%; }
+    main #starfield #universe {
+      position: relative;
+      width: 1920px;
+      height: 1080px;
+      background-color: black; }
+    main #starfield #overlay {
+      position: absolute;
+      width: 1920px;
+      height: 1080px; }
+    main #starfield #kepler {
+      position: absolute;
+      z-index: 999;
+      top: 510px;
+      left: 930px;
+      height: 60px;
+      width: 60px;
+      background-color: rgba(0, 0, 0, 0.8);
+      box-shadow: 0px 0px 40px black;
+      border-radius: 100px; }
+    main #starfield .quarter {
+      position: absolute;
+      width: 960px;
+      height: 540px; }
+    main #starfield .wraptl {
+      top: 0;
+      left: 0; }
+    main #starfield .wraptr {
+      top: 0;
+      right: 0; }
+    main #starfield .wrapbl {
+      bottom: 0;
+      left: 0; }
+    main #starfield .wrapbr {
+      bottom: 0;
+      right: 0; }
+    main #starfield .horiz {
+      width: 960px; }
+    main #starfield .verti {
+      height: 540px; }
+    main #starfield .star {
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0px 0px 8px white;
+      border-radius: 100px; }
+>>>>>>> 285f035... mouahaha

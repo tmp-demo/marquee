@@ -5,6 +5,9 @@ allthemarquee.init(function(){
 
 disclaimer(function(){
   title(function(){
-    console.log('finish');
+    console.log('finish title');
+    bottomScroller(function(){
+      console.log("finish bottomScroller");
+    })
   });
 });

@@ -15,7 +15,9 @@ function title(callback){
   titleMarqueeV.setAttribute("truespeed","");
   titleMarqueeV.setAttribute("scrollamount", "3");
   titleMarqueeV.setAttribute("scrolldelay", "16");
-  titleMarqueeV.innerHTML = "&lt;marquee&gt;";
+  var titleMarqueeDiv = document.createElement('div');
+  titleMarqueeDiv.innerHTML = "&lt;marquee&gt;";
+  titleMarqueeV.appendChild(titleMarqueeDiv);
   titleMarqueeH.appendChild(titleMarqueeV);
   allthemarquee.lvlup();
   document.getElementById('title').appendChild(titleMarqueeH);

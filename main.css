@@ -182,3 +182,45 @@ main {
     float: left;
     width: 15px;
     height: 150px; }
+  main #disclaimer {
+    position: absolute;
+    bottom: 50px; }
+    main #disclaimer marquee {
+      font-size: 500%; }
+  main #snake {
+    width: 100%;
+    height: 100%;
+    margin: auto; }
+    main #snake .snake-layer {
+      width: 80%;
+      height: 80%;
+      margin: auto;
+      position: absolute;
+      top: 10%;
+      left: 10%; }
+      main #snake .snake-layer .snake-horiz {
+        height: 100%;
+        width: 100%; }
+        main #snake .snake-layer .snake-horiz .snake-vert {
+          height: 100%; }
+          main #snake .snake-layer .snake-horiz .snake-vert .snake-elem {
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            border-radius: 60px;
+            background: radial-gradient(red, yellow, green); }
+  main #check .container {
+    position: absolute;
+    top: 0px;
+    left: 0px; }
+  main #check .checkers table tr:nth-child(2n) td:nth-child(2n),
+  main #check .checkers table tr:nth-child(2n+1) td:nth-child(2n+1) {
+    background-color: white;
+    opacity: 0.75; }
+  main #check .checkers.xl {
+    height: 4000px;
+    width: 4000px;
+    overflow: hidden; }
+    main #check .checkers.xl td {
+      width: 50px;
+      height: 50px; }

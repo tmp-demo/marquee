@@ -58,6 +58,7 @@
       horiz.setAttribute("loop","1");
       horiz.className ="scroller-horiz";
       horiz.addEventListener("finish", removeMe);
+      allthemarquee.lvlup();
 
       for(i in scrollText[lineIndex]){
         //i, scrollText[i]
@@ -75,7 +76,7 @@
           sub.setAttribute("scrolldelay","15");
           sub.className ="scroller-letter";
           sub.addEventListener("start",stopMe(i));
-          
+          allthemarquee.lvlup();
           sub.appendChild(t);   
           horiz.appendChild(sub);
 

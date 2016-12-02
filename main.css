@@ -78,7 +78,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+marquee {
   margin: 0;
   padding: 0;
   border: 0;
@@ -97,7 +98,8 @@ header,
 hgroup,
 menu,
 nav,
-section {
+section,
+marquee {
   display: block; }
 
 body {
@@ -123,14 +125,19 @@ table {
   border-spacing: 0; }
 
 body {
-  background-color: black; }
+  background-color: black;
+  font-family: arial, sans-serif;
+  font-size: 10px;
+  color: white; }
   body #marquee-counter {
     position: absolute;
     top: 0;
     right: 0;
     padding: 10px;
     width: 200px;
-    background: white; }
+    color: red;
+    font-size: 250%;
+    text-align: right; }
   body footer {
     position: absolute;
     bottom: 50px;
@@ -142,3 +149,8 @@ body {
     float: left;
     width: 15px;
     height: 150px; }
+  body #disclaimer {
+    position: absolute;
+    bottom: 50px; }
+    body #disclaimer marquee {
+      font-size: 500%; }

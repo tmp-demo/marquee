@@ -3,7 +3,7 @@ var allthemarquee = {
   callback:null,
   lvlup: function(i = 1){
     this.count+=i;
-    callback();
+    this.callback();
   },
   init:function(cb){
     this.callback = cb;

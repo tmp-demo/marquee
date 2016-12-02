@@ -58,7 +58,7 @@ function bottomScroller(calback){
     horiz.setAttribute("direction","left");
     horiz.setAttribute("behavior","scroll");
     horiz.setAttribute("truespeed","");
-    horiz.setAttribute("scrollamount","50");
+    horiz.setAttribute("scrollamount","2");
     horiz.setAttribute("scrolldelay","15");
     horiz.setAttribute("loop","1");
     horiz.className ="scroller-horiz";

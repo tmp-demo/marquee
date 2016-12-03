@@ -26,5 +26,6 @@ function title(callback){
   setTimeout(function(){
     document.getElementById('title').classList.toggle('hidden');
     callback();
+    document.getElementById('marquee-counter').classList.toggle('sush');
   }, 5000);
 }

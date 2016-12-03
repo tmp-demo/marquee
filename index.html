@@ -6,19 +6,61 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <div id="marquee-counter">1337</div>
+    <div id="marquee-counter" class="sush">1337</div>
     <main>
 
+      <section id="starter"><marquee behavior="alternate" direction="left" truespeed scrollamount="1000" scrolldelay="200">press enter key</marquee></section>
       <section id="disclaimer" class="hidden"></section>
       <section id="title" class="hidden"></section>
       <section id="check" class="hidden"></section>
       <section id="snake" class="hidden"></section>
       <section id="moire" class="hidden"></section>
       <section id="greets" class="hidden"></section>
-      <section id="starfield" class="hidden"></section>
+      <section id="starfield" class="hidden">
+        <div id="universe">
+          <div id="overlay"></div>
+          <div id="kepler"></div>
+          <div class="quarter wraptl">
+            <marquee class="horiz" behavior="scroll" direction="left" scrollamount="1" scrolldelay="50" hspace="0" vspace="0" loop="1" truespeed>
+              <marquee class="verti" behavior="scroll" direction="up" scrollamount="1" scrolldelay="50" hspace="0" vspace="0" loop="1" truespeed>
+                <div class="star" style="width:2px; height:2px;"></div>
+              </marquee>
+            </marquee>
+          </div>
 
+          <div class="quarter wraptr">
+            <marquee class="horiz" behavior="scroll" direction="right" scrollamount="1" scrolldelay="50" hspace="0" vspace="0" loop="1" truespeed>
+              <marquee class="verti" behavior="scroll" direction="up" scrollamount="1" scrolldelay="50" hspace="0" vspace="0" loop="1" truespeed>
+                <div class="star" style="width:2px; height:2px;"></div>
+              </marquee>
+            </marquee>
+          </div>
+
+
+          <!-- HAIL CTHULHU -->
+
+
+          <div class="quarter wrapbl">
+            <marquee class="horiz" behavior="scroll" direction="left" scrollamount="1" scrolldelay="50" hspace="0" vspace="0" loop="1" truespeed>
+              <marquee class="verti" behavior="scroll" direction="down" scrollamount="1" scrolldelay="50" hspace="0" vspace="0" loop="1" truespeed>
+                <div class="star" style="width:2px; height:2px;"></div>
+              </marquee>
+            </marquee>
+          </div>
+
+          <div class="quarter wrapbr">
+            <marquee class="horiz" behavior="scroll" direction="right" scrollamount="1" scrolldelay="50" hspace="0" vspace="0" loop="1" truespeed>
+              <marquee class="verti" behavior="scroll" direction="down" scrollamount="1" scrolldelay="50" hspace="0" vspace="0" loop="1" truespeed>
+                <div class="star" style="width:2px; height:2px;"></div>
+              </marquee>
+            </marquee>
+          </div>
+        </div>
+      <!-- it's a trap -->
+      </section>
+
+      <footer id="footer" class="hidden"></footer>
     </main>
-    <footer id="footer" class="hidden"></footer>
 
     <script type="text/javascript" src="count.js"></script>
     <script type="text/javascript" src="disclaimer.js"></script>

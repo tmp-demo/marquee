@@ -8,21 +8,34 @@ body
   font-size: 10px
   color: white
 
-  #marquee-counter
-    position: absolute
-    top: 0
-    right: 0
-    padding: 10px
-    width: 200px
-    color: red
-    font-size: 250%
-    text-align: right
+#marquee-counter
+  position: absolute
+  top: 0
+  right: 0
+  padding: 10px
+  width: 200px
+  color: red
+  font-size: 250%
+  text-align: right
+#marquee-counter.sush
+  visibility: hidden
 
 main
+  position: absolute
+  top: 0
+  left: 0
   height: 100%
+  width: 100%
+  overflow: hidden
 
   .hidden
     display: none
+
+  #starter
+    marquee
+      margin-top: calc((100vh / 2) - 50px)
+      height: 50px
+      font-size: 350%
 
   #disclaimer
     position: absolute
@@ -98,3 +111,57 @@ main
             border-radius: 60px
             //border: 5px solid red
             background: radial-gradient(red, yellow, green)
+          
+  #starfield
+    width: 100%
+    height: 100%
+    #universe 
+      position: relative
+      width: 1920px
+      height: 1080px
+      background-color: black
+
+    #overlay 
+      position: absolute
+      width: 1920px
+      height: 1080px
+
+    #kepler
+      position: absolute
+      z-index: 999
+      top: 510px
+      left: 930px
+      height: 60px
+      width: 60px
+      background-color: rgba(0, 0, 0, 0.8)
+      box-shadow: 0px 0px 40px black
+      border-radius: 100px
+    
+    .quarter 
+      position: absolute
+      width: 960px
+      height: 540px
+
+    .wraptl
+      top: 0
+      left: 0
+    .wraptr
+      top: 0
+      right: 0
+    .wrapbl
+      bottom: 0
+      left: 0
+    .wrapbr
+      bottom: 0
+      right: 0
+
+    .horiz
+      width: 960px
+    .verti
+      height: 540px
+
+    .star 
+      background-color: rgba(255, 255, 255, 0.8)
+      box-shadow: 0px 0px 8px white
+      border-radius: 100px
+    

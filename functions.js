@@ -3,6 +3,8 @@ allthemarquee.init(function(){
   document.getElementById('marquee-counter').innerHTML = this.count;
 });
 
+var audio = new Audio('foo.mp3');
+
 // add the starter marquee
 allthemarquee.lvlup();
 
@@ -26,6 +28,7 @@ function thisistheend(){
 }
 
 function start(){
+  audio.play();
   disclaimer(function(){
     title(8000,function(){
       bottomScroller(function(){});

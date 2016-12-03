@@ -7,14 +7,11 @@ function check(callback){
   //effect last for 10 seconds
   setTimeout(function(){
     container.classList.toggle("hidden");
-    callback;
-  }, 15000);
-
-
+    callback();
+  }, 10000);
 
   var sizes = ["xl","l","m"];
   var speeds = [15,10,5];
-
 
   //prepare the checkerboard first
   var checkers = document.createElement("div");
@@ -28,18 +25,12 @@ function check(callback){
   var tableTemplate = document.createElement("table");
   var tbodyTemplate = document.createElement("tbody");
 
-
   for (var i = 0; i < 80; i++) {
     tbodyTemplate.appendChild(rowTemplate.cloneNode(true));
   }
   tableTemplate.appendChild(tbodyTemplate);
 
   checkers.appendChild(tableTemplate);
-
-
-
-
-
 
   //for each size, append a new checker board
   sizes.map(function(size,i){
@@ -56,7 +47,6 @@ function check(callback){
     m1.setAttribute("scrolldelay","16");
     m1.className ="checker-horiz";
     allthemarquee.lvlup();
-   
 
     var m2 = document.createElement("marquee");
     m2.setAttribute("direction","up");
@@ -73,25 +63,13 @@ function check(callback){
 
     checkersInstance.classList.toggle(size);
 
-
     m2.appendChild(checkersInstance);
     m1.appendChild(m2);
 
     c.appendChild(m1)
 
-
-
     container.appendChild(c);
 
-
-
-
   })
-
-
-
-
-
-
 
 }

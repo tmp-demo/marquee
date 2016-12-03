@@ -10,7 +10,7 @@ function disclaimer(callback){
   disclaimerMarquee.setAttribute("scrollamount", "7");
   disclaimerMarquee.setAttribute("scrolldelay", "16");
   disclaimerMarquee.setAttribute("loop", "1");
-  disclaimerMarquee.innerHTML = "Please use Firefox for this demo.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you suffer from epilepsy, please note that this demo may not be suitable for you, so turn around and refer on other people face's reactions to judge what's on the screen.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Viewer discretion is advised, every animation and motion in this demo is based on a single piece of technology, or shall we say, on a single piece of retrology.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ladies, gentlemen, and all the folks in between or apart, we present you tonight a demo only based on:";
+  disclaimerMarquee.innerHTML = "If you suffer from epilepsy, please note that this demo may not be suitable for you, so turn around and refer on other people face's reactions to judge what's on the screen.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Viewer discretion is advised, every animation and motion in this demo is based on a single piece of technology, or shall we say, on a single piece of retrology.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ladies, gentlemen, and all the folks in between or apart, we present you tonight a demo only based on:";
   disclaimer.appendChild(disclaimerMarquee);
   // disclaimer marquee
   allthemarquee.lvlup();

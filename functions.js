@@ -6,18 +6,21 @@ allthemarquee.init(function(){
 // add the starter marquee
 allthemarquee.lvlup();
 
-document.addEventListener("keypress", function(e){
+function keypresstamere(e){
   if(e.keyCode==13){
     document.getElementById('starter').classList.toggle('hidden');
     start();
+    window.removeEventListener("keypress", keypresstamere);
   }
-});
+}
+
+window.addEventListener("keypress", keypresstamere);
 
 function start(){
-  //disclaimer(function(){
-    //title(function(){
-      //bottomScroller(function(){});
-      //snake(function(){
+  disclaimer(function(){
+    title(function(){
+      bottomScroller(function(){});
+      snake(function(){
         check(function(){
           moire(function(){
             greets(function(){
@@ -25,7 +28,7 @@ function start(){
             });
           });
         });
-      //});
-    //});
-  //});
+      });
+    });
+  });
 }

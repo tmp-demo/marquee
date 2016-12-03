@@ -3,7 +3,7 @@ allthemarquee.init(function(){
   document.getElementById('marquee-counter').innerHTML = this.count;
 });
 
-var audio = new Audio('foo.mp3');
+var audio = new Audio('different_heaven_nekozilla_lfz_remix.mp3');
 
 // add the starter marquee
 allthemarquee.lvlup();

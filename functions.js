@@ -17,14 +17,17 @@ function keypresstamere(e){
 window.addEventListener("keypress", keypresstamere);
 
 function start(){
-  //disclaimer(function(){
-    //title(function(){
+
+  disclaimer(function(){
+    title(function(){
       bottomScroller(function(){});
-      /*snake(function(){
-        check(function(){
-          moire(function(){
-            greets(function(){
-              starfield(function(){console.log('END');});
+      rotating(function(){
+        snake(function(){
+          check(function(){
+            moire(function(){
+              greets(function(){
+                starfield(function(){console.log('END');});
+              });
             });
           });
         });

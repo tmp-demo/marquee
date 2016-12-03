@@ -17,10 +17,10 @@ function keypresstamere(e){
 window.addEventListener("keypress", keypresstamere);
 
 function start(){
-  disclaimer(function(){
-    title(function(){
+  //disclaimer(function(){
+    //title(function(){
       bottomScroller(function(){});
-      snake(function(){
+      /*snake(function(){
         check(function(){
           moire(function(){
             greets(function(){
@@ -28,7 +28,7 @@ function start(){
             });
           });
         });
-      });
-    });
-  });
+      });*/
+    //});
+  //});
 }

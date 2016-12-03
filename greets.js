@@ -1,35 +1,44 @@
 function greets(callback){
   var greetz = [
-    "aaaaaaaaa",
-    "bbbbbbbbbbbb",
-    "ccccc",
-    "dddddddd",
-    "eeeee eeeeee",
-    "fffffff fffffff",
-    "ggggggg",
-    "hhhhhhhhh",
-    "iiiiiiiiiii iiii",
-    "hhhhhhhhh hhhhhhh"
+    "maman",
+    "bière",
+    "satan",
+    "bière",
+    "netscape",
+    "cookie<3",
+    "rm -rf /",
+    "die()",
+    "how do I stop this shit?",
+    "kill *"
   ];
+
+  var greetended = 0;
+
+  function bye(){
+    greetended++;
+    if(greetended == greetz.length){
+      document.getElementById('greets').classList.toggle('hidden');
+      callback();
+    }
+  }
 
   document.getElementById('greets').classList.toggle('hidden');
 
   greetz.map(function(greet, i){
     var marqueeContainer = document.createElement('div');
     marqueeContainer.className = 'marquee-container';
-    marqueeContainer.style.top = "10px";
     var marquee = document.createElement('marquee');
     marquee.setAttribute("direction", "left");
     marquee.setAttribute("behavior", "scroll");
     marquee.setAttribute("truespeed", "");
     marquee.setAttribute("loop", "1");
+    marquee.setAttribute("scrolldelay", 16);
+    var marqueetoprand = Math.round(Math.random() * (800 - 10) + 10);
+    var scrollamountrand = Math.floor(Math.random() * (15 - 5) + 5);
 
-    var scrollamountrand = 5; //Math.floor(Math.random() * (7 - 5) + 5);
-    //console.log(scrollamountrand);
     marquee.setAttribute("scrollamount", scrollamountrand);
-    var scrolldelayrand = 16; //Math.floor(Math.random() * (22 - 16) + 22);
-    //console.log(scrolldelayrand);
-    marquee.setAttribute("scrolldelay", scrolldelayrand);
+    marquee.style.fontSize = 250*scrollamountrand+"%";
+    marqueeContainer.style.top = marqueetoprand+"px";
 
     var marqueeDiv = document.createElement('div');
     marqueeDiv.innerHTML = greet;
@@ -39,22 +48,12 @@ function greets(callback){
     setTimeout(function(){
       document.getElementById('greets').appendChild(marqueeContainer);
       allthemarquee.lvlup();
-    },800 * (i+1));
+    },1000 * (i+1));
 
-  });
+    marquee.addEventListener("finish",function(){
+      bye();
+    });
 
-  var greetended = 0;
-
-  function bye(){
-    greetended++;
-    if(greetended = greetz.length){
-      document.getElementById('greets').classList.toggle('hidden');
-      callback();
-    }
-  }
-
-  document.getElementById('greets').addEventListener("finish",function(){
-    bye();
   });
 
 }

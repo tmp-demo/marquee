@@ -14,9 +14,10 @@ body
   right: 0
   padding: 10px
   width: 200px
-  color: red
+  color: green
   font-size: 250%
   text-align: right
+  z-index: 9999999
 #marquee-counter.sush
   visibility: hidden
 
@@ -83,7 +84,6 @@ main
     marquee
       font-size: 500%
 
-<<<<<<< HEAD
 
   .snake-horiz
     width : 100%
@@ -102,7 +102,6 @@ main
 
 
   
-=======
   #snake
     width: 100%
     height: 100%
@@ -131,9 +130,6 @@ main
             border-radius: 60px
             //border: 5px solid red
             background: radial-gradient(red, yellow, green)
-<<<<<<< HEAD
->>>>>>> 07e6799... snake a bit
-=======
           
   #starfield
     width: 100%
@@ -188,4 +184,32 @@ main
       box-shadow: 0px 0px 8px white
       border-radius: 100px
     
->>>>>>> 285f035... mouahaha
+
+
+  #check
+    .container 
+      position: absolute
+      top: 0px
+      left: 0px
+    
+
+    .checkers
+
+      table 
+        tr:nth-child(2n) td:nth-child(2n),
+        tr:nth-child(2n+1) td:nth-child(2n+1) 
+          background-color: white
+          opacity: 0.75
+
+
+    .checkers.xl
+      height: 4000px
+      width: 4000px
+      overflow: hidden
+
+      td
+        width: 50px
+        height: 50px
+
+
+        

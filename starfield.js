@@ -1,4 +1,5 @@
 function starfield(callback){
+  document.getElementById('starfield').classList.toggle('hidden');
   function blackHolehoriz(){
     var eventHoriz = this.parentNode;
     eventHoriz.parentNode.removeChild(eventHoriz);
@@ -12,8 +13,8 @@ function starfield(callback){
   function bigBang(){
   i = (i + 1) % k;
 
-    var sub = quarters[i].cloneNode(true);
-    sub.setAttribute('style','display:block')
+  var sub = quarters[i].cloneNode(true);
+  sub.setAttribute('style','display:block');
   var scrollAmountHoriz = Math.round(Math.random() * 16 + 3);
   var scrollAmountVerti = Math.round(16 - scrollAmountHoriz + 4);
   var subHoriz = sub.querySelector('.horiz');
@@ -21,6 +22,7 @@ function starfield(callback){
   subHoriz.setAttribute('scrollamount',scrollAmountHoriz);
   subVerti.setAttribute('scrollamount',scrollAmountVerti);
     document.getElementById('universe').appendChild(sub);
+    allthemarquee.lvlup();
     sub.querySelector('marquee').addEventListener('finish', blackHolehoriz);
     sub.querySelector('marquee marquee').addEventListener('finish', blackHoleverti);
     window.setTimeout(bigBang,Math.round(Math.random() * 150));
@@ -29,7 +31,7 @@ function starfield(callback){
   var quarters = document.querySelectorAll('.quarter');
   
   for(var i = 0; i < quarters.length; i++){
-  quarters[i].parentNode.removeChild(quarters[i]);
+    quarters[i].parentNode.removeChild(quarters[i]);
   }
 
   var k = quarters.length;
@@ -42,8 +44,7 @@ function starfield(callback){
   window.setInterval(function(){
     var marquees = document.querySelectorAll(".quarter marquee");
     Array.prototype.forEach.call(marquees, function(elem){
-      var scrollamountelem = Math.round(elem.getAttribute("scrollamount") * 
-      1.1);
+      var scrollamountelem = Math.round(elem.getAttribute("scrollamount") * 1.1);
       elem.setAttribute('scrollamount', scrollamountelem);
     })
     
@@ -64,7 +65,7 @@ function starfield(callback){
       elem.style.height = starssize + 'px';
     })
   },100);
-  
+
   window.setTimeout(function(){
     callback();
   },8000);

@@ -17,6 +17,26 @@ function snake(time,callback){
 };
 
 
+var noise=[
+  [1,-1],
+  [0, -1],
+  [-1, 0],
+  [0, 1],
+  [0, 1],
+  [1,-1],
+  [0, -1],
+  [-1, 0],
+  [0, 1],
+  [0, 1],
+  [1,-1],
+  [0, -1],
+  [-1, 0],
+  [0, 1],
+  [0, 1],
+
+]
+
+
   for(var i = 0; i < 30; i++){
 
     (function(i){
@@ -32,8 +52,8 @@ function snake(time,callback){
         horiz.setAttribute("direction","up");
         horiz.setAttribute("behavior","alternate");
         horiz.setAttribute("truespeed","");
-        horiz.setAttribute("scrollamount","6");
-        horiz.setAttribute("scrolldelay","16");
+        horiz.setAttribute("scrollamount","8");
+        horiz.setAttribute("scrolldelay","25");
         horiz.className ="snake-horiz";
         allthemarquee.lvlup();
 
@@ -44,8 +64,8 @@ function snake(time,callback){
         vert.setAttribute("direction","left");
         vert.setAttribute("behavior","alternate");
         vert.setAttribute("truespeed","");
-        vert.setAttribute("scrollamount","6");
-        vert.setAttribute("scrolldelay","16");
+        vert.setAttribute("scrollamount","8");
+        vert.setAttribute("scrolldelay","25");
         vert.className ="snake-vert";
         allthemarquee.lvlup();
 
@@ -56,7 +76,15 @@ function snake(time,callback){
 
         vert.appendChild(elem); 
 
-      }, i*70);
+
+        var j = 0;
+        setInterval(function(){
+          vert.setAttribute("scrollamount", parseInt(vert.getAttribute("scrollamount")) + parseInt(noise[j][0])*3);
+          horiz.setAttribute("scrollamount", parseInt(horiz.getAttribute("scrollamount")) + parseInt(noise[j][1])*3);
+          j++;
+        }, 1000)
+
+      }, i*100);
 
     })(i);
 

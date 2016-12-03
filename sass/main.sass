@@ -2,6 +2,7 @@
 
 @import reset
 
+
 body
   background-color: black
   font-family: arial,sans-serif
@@ -187,29 +188,40 @@ main
 
 
   #check
-    .container 
+
+    .container
       position: absolute
       top: 0px
       left: 0px
-    
+      width: 100%
+      height: 100%
 
-    .checkers
+      .checker-horiz
 
-      table 
-        tr:nth-child(2n) td:nth-child(2n),
-        tr:nth-child(2n+1) td:nth-child(2n+1) 
-          background-color: white
-          opacity: 0.75
+        .checker-vert
+          height: 2000px
 
+          .checkers
 
-    .checkers.xl
-      height: 4000px
-      width: 4000px
-      overflow: hidden
+            table 
+              tr:nth-child(2n) td:nth-child(2n),
+              tr:nth-child(2n+1) td:nth-child(2n+1) 
+                background-color: white
+                opacity: 0.75
 
-      td
-        width: 50px
-        height: 50px
+          .checkers.xl
+            td
+              width: 200px
+              height: 200px
 
+          .checkers.l
 
-        
+            td
+              width: calc(200px * 15/21)
+              height: calc(200px * 15/21)
+
+          .checkers.m
+
+            td
+              width: calc(200px * 15/21 * 15/21)
+              height: calc(200px * 15/21 * 15/21)

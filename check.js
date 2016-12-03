@@ -8,11 +8,12 @@ function check(callback){
   setTimeout(function(){
     container.classList.toggle("hidden");
     callback;
-  }, 30000);
+  }, 300000);
 
 
 
-  var sizes = ["xl,l,m"];
+  var sizes = ["xl","l","m"];
+  var speeds = [15,10,5];
 
 
   //prepare the checkerboard first
@@ -36,15 +37,53 @@ function check(callback){
   checkers.appendChild(tableTemplate);
 
 
+
+
+
+
   //for each size, append a new checker board
-  sizes.forEach(function(size){
+  sizes.map(function(size,i){
+
+    var c = document.createElement("div");
+    c.className = "container";
+
+      //now place this in marquees
+    var m1 = document.createElement("marquee");
+    m1.setAttribute("direction","left");
+    m1.setAttribute("behavior","alternate");
+    m1.setAttribute("truespeed","");
+    m1.setAttribute("scrollamount",speeds[i]);
+    m1.setAttribute("scrolldelay","16");
+    m1.className ="checker-horiz";
+    allthemarquee.lvlup();
+   
+
+    var m2 = document.createElement("marquee");
+    m2.setAttribute("direction","up");
+    m2.setAttribute("behavior","alternate");
+    m2.setAttribute("truespeed","");
+    m2.setAttribute("scrollamount",speeds[i]);
+    m2.setAttribute("scrolldelay","16");
+    m2.className ="checker-vert";
+    allthemarquee.lvlup();
+
 
     var checkersInstance = checkers.cloneNode(true);
     console.log(""+checkersInstance, checkersInstance);
 
     checkersInstance.classList.toggle(size);
 
-    container.appendChild(checkersInstance);
+
+    m2.appendChild(checkersInstance);
+    m1.appendChild(m2);
+
+    c.appendChild(m1)
+
+
+
+    container.appendChild(c);
+
+
 
 
   })

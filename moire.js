@@ -39,6 +39,7 @@ function moire(time,callback){
   m1.setAttribute("scrollamount",2);
   m1.setAttribute("scrolldelay","30");
   m1.className ="moire-horiz";
+  allthemarquee.lvlup();
 
   var m2=document.createElement("marquee");
   m2.setAttribute("direction","down");
@@ -47,6 +48,7 @@ function moire(time,callback){
   m2.setAttribute("scrollamount",2);
   m2.setAttribute("scrolldelay","30");
   m2.className ="moire-vert";
+  allthemarquee.lvlup();
 
 
 

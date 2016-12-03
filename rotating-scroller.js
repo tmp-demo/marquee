@@ -17,7 +17,12 @@ function rotating(time,callback){
   console.log(circle);
 
 
-  var spinInterval = 4;
+    allthemarquee.lvlup();
+    
+    allthemarquee.lvlup();
+
+
+  var spinInterval = 2;
 
   for(var i in text){
     var letterSpan = document.createElement("span");
@@ -38,7 +43,7 @@ function rotating(time,callback){
       return function(){
         letterSpan.style.visibility = "hidden";
       }
-    }(letterSpan), delay + spinInterval*1000 );
+    }(letterSpan), delay + spinInterval*1000 * 9 / 10 );
     
     
   }

@@ -182,9 +182,11 @@ main {
     main #greets .marquee-container {
       position: absolute;
       width: 100%;
+      overflow: visible;
       left: 0; }
       main #greets .marquee-container marquee {
-        height: 250px; }
+        height: 250px;
+        color: rgba(255, 255, 255, 0.5); }
   main footer {
     position: absolute;
     bottom: 50px;
@@ -194,8 +196,10 @@ main {
     z-index: 99999; }
   main .scroller-letter {
     float: left;
-    width: 15px;
-    height: 150px; }
+    width: 65px;
+    height: 150px;
+    font-size: 750%;
+    text-align: center; }
   main #disclaimer {
     position: absolute;
     bottom: 50px; }

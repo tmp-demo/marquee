@@ -8,7 +8,7 @@ function check(callback){
   setTimeout(function(){
     container.classList.toggle("hidden");
     callback;
-  }, 300000);
+  }, 15000);
 
 
 

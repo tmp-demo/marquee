@@ -294,3 +294,23 @@ main {
       main #check .container .checker-horiz .checker-vert .checkers.m td {
         width: calc(200px * 15/21 * 15/21);
         height: calc(200px * 15/21 * 15/21); }
+  main #moire {
+    width: 100%;
+    height: 100%; }
+    main #moire .fix {
+      mix-blend-mode: exclusion; }
+    main #moire .moire-horiz {
+      width: 1920px; }
+    main #moire .moire-vert {
+      height: 1080px;
+      width: 2100px;
+      position: relative; }
+    main #moire .move {
+      width: 2100px;
+      height: 1200px;
+      position: relative; }
+    main #moire .moiree-line {
+      border-style: solid;
+      border-width: 5px;
+      border-color: white;
+      position: absolute; }

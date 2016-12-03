@@ -16,6 +16,15 @@ function keypresstamere(e){
 
 window.addEventListener("keypress", keypresstamere);
 
+function thisistheend(){
+  var marqueeCounter = document.getElementById('marquee-counter');
+  marqueeCounter.style.right = "initial";
+  marqueeCounter.style.left = "700px";
+  marqueeCounter.style.top = "250px";
+  marqueeCounter.style.fontSize = "2000%";
+  document.getElementById('countertxt').classList.toggle('hidden');
+}
+
 function start(){
 
   snake(20000,function(){});
@@ -28,7 +37,9 @@ function start(){
           check(5000,function(){
             moire(5000,function(){
               greets(function(){
-                starfield(function(){console.log('END');});
+                starfield(1000,function(){
+                  thisistheend();
+                ;});
               });
             });
           });

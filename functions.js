@@ -17,21 +17,20 @@ function keypresstamere(e){
 window.addEventListener("keypress", keypresstamere);
 
 function start(){
-
-  disclaimer(function(){
-    title(function(){
-      bottomScroller(function(){});
-      rotating(function(){
-        snake(function(){
-          check(function(){
-            moire(function(){
+  //disclaimer(function(){
+    //title(1000,function(){
+      //bottomScroller(function(){});
+      //rotating(1000,function(){
+        //snake(1000,function(){
+          //check(1000,function(){
+            moire(1000,function(){
               greets(function(){
                 starfield(function(){console.log('END');});
               });
             });
-          });
-        });
-      });*/
+          //});
+        //});
+      //});
     //});
   //});
 }

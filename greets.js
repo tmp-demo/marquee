@@ -1,4 +1,7 @@
 function greets(callback){
+
+  document.getElementById('greets').classList.toggle('hidden');
+
   var greetz = [
     "maman",
     "bière",
@@ -22,8 +25,6 @@ function greets(callback){
     }
   }
 
-  document.getElementById('greets').classList.toggle('hidden');
-
   greetz.map(function(greet, i){
     var marqueeContainer = document.createElement('div');
     marqueeContainer.className = 'marquee-container';
@@ -33,7 +34,7 @@ function greets(callback){
     marquee.setAttribute("truespeed", "");
     marquee.setAttribute("loop", "1");
     marquee.setAttribute("scrolldelay", 16);
-    var marqueetoprand = Math.round(Math.random() * (800 - 10) + 10);
+    var marqueetoprand = Math.round(Math.random() * (600 - 10) + 10);
     var scrollamountrand = Math.floor(Math.random() * (15 - 5) + 5);
 
     marquee.setAttribute("scrollamount", scrollamountrand);

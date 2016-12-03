@@ -1,9 +1,9 @@
-function snake(callback){
+function snake(time,callback){
   //effect last for 10 seconds
   setTimeout(function(){
     container.classList.toggle("hidden");
     callback();
-  }, 30000);
+  }, time);
 
 
 

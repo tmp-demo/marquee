@@ -1,4 +1,4 @@
-function moire(callback){
+function moire(time,callback){
     //get the dom element in which we want to draw
   var container = document.getElementById("moire");
   container.classList.toggle("hidden");
@@ -6,8 +6,8 @@ function moire(callback){
   //effect last for 10 seconds
   setTimeout(function(){
     container.classList.toggle("hidden");
-    callback;
-  }, 300000);
+    callback();
+  }, time);
 
 
 

@@ -27,14 +27,14 @@ function thisistheend(){
 
 function start(){
   disclaimer(function(){
-    title(1000,function(){
+    title(8000,function(){
       bottomScroller(function(){});
-      rotating(1000,function(){
-        snake(1000,function(){
-          check(1000,function(){
-            moire(1000,function(){
+      rotating(30000,function(){
+        snake(30000,function(){
+          check(30000,function(){
+            moire(20000,function(){
               greets(function(){
-                starfield(1000,function(){
+                starfield(20000,function(){
                   thisistheend();
                 ;});
               });

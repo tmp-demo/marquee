@@ -1,18 +1,12 @@
 function bottomScroller(calback){
 
   var scrollText = ["No animals were harmed during the making of this demo.",
-    "We cannot guarantee that your eyes or sensibility won't be, though.",
     "Mozilla Developer Network states about <marquee> that :",
     "This feature is obsolete.",
     "Although it may still work in some browsers, [...] Try to avoid using it.",
     "Please note that this demo may not work correctly on Netscape.",
     "Congratulations, you read the scroller this far, you won a penis enlargment kit,",
-    "please claim your reward at the end of the demo party.",
-    "Always wondered what was the last decimal of Pi?",
-    "3.1415926535897932384626433832795028841971693993751058209749445...",
-    "Just joking.",
     "Do you like it so far? If you do, please imitate Chewbacca's scream right now.",
-    "Wow. Please stop, that was scary.",
     "You still there?",
     "Oh good.",
     "Any minute now."];

@@ -314,3 +314,7 @@ main {
       border-width: 5px;
       border-color: white;
       position: absolute; }
+  main #rotating #circle {
+    width: 100px;
+    height: 100px;
+    color: red; }

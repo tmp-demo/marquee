@@ -31,9 +31,9 @@ function start(){
     title(5000,function(){
       bottomScroller(function(){});
       rotating(20000,function(){
-        snake(30000,function(){
-          check(30000,function(){
-            moire(20000,function(){
+        snake(20000,function(){
+          check(5000,function(){
+            moire(5000,function(){
               greets(function(){
                 starfield(20000,function(){
                   thisistheend();

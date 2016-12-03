@@ -1,4 +1,7 @@
 function snake(time,callback){
+
+
+
   //effect last for 10 seconds
   setTimeout(function(){
     container.classList.toggle("hidden");
@@ -14,7 +17,7 @@ function snake(time,callback){
   HTMLElement.prototype.appendFirst=function(childNode){
     if(this.firstChild)this.insertBefore(childNode,this.firstChild);
     else this.appendChild(childNode);
-};
+  };
 
 
 var noise=[
@@ -49,10 +52,29 @@ var noise=[
   [0, 1],
   [0, 1],
 
-]
+];
+
+var removeLayer = function(){
+    
+    var that = this.parentNode
+      while(!that.classList.contains("snake-layer")){
+        that = that.parentNode;
+      }
+    that.parentNode.removeChild(that);
+    
+  }
+
+var NBlayers = 30
+var layersDone = 0
+var layerDone = function(){
+  layersDOne++;
+  if (layersDone >= NBlayers){
+    console.log("done");
+  }
+}
 
 
-  for(var i = 0; i < 30; i++){
+  for(var i = 0; i < NBlayers; i++){
 
     (function(i){
 
@@ -60,7 +82,7 @@ var noise=[
 
 
         var layer = document.createElement("div");
-        layer.className = "snake-layer"
+        layer.className = "snake-layer";
         container.appendFirst(layer);
 
         var horiz = document.createElement("marquee");
@@ -93,22 +115,31 @@ var noise=[
 
 
         var j = 0;
-        setInterval(function(){
+        var noiseIntervalId = setInterval(function(){
           vert.setAttribute("scrollamount", parseInt(vert.getAttribute("scrollamount")) + parseInt(noise[j][0])*3);
           horiz.setAttribute("scrollamount", parseInt(horiz.getAttribute("scrollamount")) + parseInt(noise[j][1])*3);
           j++;
+          if(j >= noise.length){
+            console.log("clearing interval" +noiseIntervalId);
+            clearInterval(noiseIntervalId);
+          }
         }, 1000)
+        console.log("setting inteval :" + noiseIntervalId);
 
         setTimeout(function(){
-          vert.setAttribute("scrollamount",10+10*Math.random());
-          vert.setAttribute("direction", Math.random() < 0.5 ? "left" : "right" );
-          console.log(vert.getAttribute("behavior"));
+          //vert.setAttribute("scrollamount",10+10*Math.random());
+          //vert.setAttribute("direction", Math.random() < 0.5 ? "left" : "right" );
           vert.setAttribute("behavior","scroll");
-          console.log("->"+ vert.getAttribute("behavior"));
-          horiz.setAttribute("scrollamount",10+10*Math.random());
-          horiz.setAttribute("direction", Math.random() < 0.5 ? "up": "down" );
+          vert.setAttribute("loop","1");
+          vert.addEventListener("finish", removeLayer);
+
+          //horiz.setAttribute("scrollamount",10+10*Math.random());
+          //horiz.setAttribute("direction", Math.random() < 0.5 ? "up": "down" );
           horiz.setAttribute("behavior","scroll");
-        }, time-3000); 
+          horiz.setAttribute("loop","1");
+          horiz.addEventListener("finish", removeLayer);
+
+        }, time-6000); 
 
       }, i*100);
 

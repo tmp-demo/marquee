@@ -4,12 +4,11 @@ function bottomScroller(calback){
     "Mozilla Developer Network states about <marquee> that :",
     "This feature is obsolete.",
     "Although it may still work in some browsers, [...] Try to avoid using it.",
+    "For you pleasure, coded by Gruck and Sascha, sound by <insert here>"
     "Please note that this demo may not work correctly on Netscape.",
     "Congratulations, you read the scroller this far, you won a penis enlargment kit,",
-    "Do you like it so far? If you do, please imitate Chewbacca's scream right now.",
-    "You still there?",
-    "Oh good.",
-    "Any minute now."];
+    "Do you like it so far? If you do, please imitate Chewbacca's scream right now."
+    ];
 
   var footer = document.getElementById("footer");
   footer.classList.toggle("hidden");

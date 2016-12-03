@@ -1,4 +1,4 @@
-function check(callback){
+function check(time,callback){
 
   //get the dom element in which we want to draw
   var container = document.getElementById("check");
@@ -8,7 +8,7 @@ function check(callback){
   setTimeout(function(){
     container.classList.toggle("hidden");
     callback();
-  }, 10000);
+  }, time);
 
   var sizes = ["xl","l","m"];
   var speeds = [15,10,5];
@@ -59,7 +59,7 @@ function check(callback){
 
 
     var checkersInstance = checkers.cloneNode(true);
-    console.log(""+checkersInstance, checkersInstance);
+    //console.log(""+checkersInstance, checkersInstance);
 
     checkersInstance.classList.toggle(size);
 

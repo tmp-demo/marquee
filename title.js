@@ -1,4 +1,4 @@
-function title(callback){
+function title(time,callback){
   document.getElementById('title').classList.toggle('hidden');
 
   var colors = [
@@ -42,5 +42,5 @@ function title(callback){
     document.getElementById('title').classList.toggle('hidden');
     callback();
     document.getElementById('marquee-counter').classList.toggle('sush');
-  }, 5000);
+  }, time);
 }

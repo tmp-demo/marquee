@@ -16,6 +16,15 @@ function keypresstamere(e){
 
 window.addEventListener("keypress", keypresstamere);
 
+function thisistheend(){
+  var marqueeCounter = document.getElementById('marquee-counter');
+  marqueeCounter.style.right = "initial";
+  marqueeCounter.style.left = "700px";
+  marqueeCounter.style.top = "250px";
+  marqueeCounter.style.fontSize = "2000%";
+  document.getElementById('countertxt').classList.toggle('hidden');
+}
+
 function start(){
   disclaimer(function(){
     title(1000,function(){
@@ -25,7 +34,9 @@ function start(){
           check(1000,function(){
             moire(1000,function(){
               greets(function(){
-                starfield(function(){console.log('END');});
+                starfield(1000,function(){
+                  thisistheend();
+                ;});
               });
             });
           });

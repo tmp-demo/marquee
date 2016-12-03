@@ -1,4 +1,4 @@
-function starfield(callback){
+function starfield(time,callback){
   document.getElementById('starfield').classList.toggle('hidden');
   function blackHolehoriz(){
     var eventHoriz = this.parentNode;
@@ -68,5 +68,5 @@ function starfield(callback){
 
   window.setTimeout(function(){
     callback();
-  },8000);
+  },time);
 }

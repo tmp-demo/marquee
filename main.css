@@ -152,6 +152,16 @@ body {
 #marquee-counter.sush {
   visibility: hidden; }
 
+#countertxt {
+  font-size: 750%;
+  position: absolute;
+  top: 450px;
+  left: 550px;
+  z-index: 999999; }
+
+.hidden {
+  display: none; }
+
 main {
   position: absolute;
   top: 0;
@@ -159,8 +169,6 @@ main {
   height: 100%;
   width: 100%;
   overflow: hidden; }
-  main .hidden {
-    display: none; }
   main #starter marquee {
     margin-top: calc((100vh / 2) - 50px);
     height: 50px;

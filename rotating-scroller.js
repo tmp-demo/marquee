@@ -9,6 +9,9 @@ function rotating(callback){
     callback;
   }, 300000);
 
-  
+
+  var text = "Behold ! You are currently viewing the one and only CSS animation, and it's only a rotation !";
+
+
 
 }

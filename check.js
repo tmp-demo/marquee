@@ -13,7 +13,7 @@ function check(callback){
 
 
   var sizes = ["xl","l","m"];
-  var speeds = [18,12,6];
+  var speeds = [15,10,5];
 
 
   //prepare the checkerboard first

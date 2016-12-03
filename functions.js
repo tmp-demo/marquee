@@ -18,16 +18,15 @@ window.addEventListener("keypress", keypresstamere);
 
 function start(){
 
-  rotating(function(){});
-
-/*
+  snake(20000,function(){});
+  /*
   disclaimer(function(){
-    title(function(){
+    title(5000,function(){
       bottomScroller(function(){});
-      rotating(function(){
-        snake(function(){
-          check(function(){
-            moire(function(){
+      rotating(20000,function(){
+        snake(5000,function(){
+          check(5000,function(){
+            moire(5000,function(){
               greets(function(){
                 starfield(function(){console.log('END');});
               });
@@ -38,4 +37,8 @@ function start(){
     });
   });
 */
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0ec680f... sdhgsoifhg

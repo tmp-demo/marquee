@@ -29,7 +29,7 @@ function start(){
   disclaimer(function(){
     title(8000,function(){
       bottomScroller(function(){});
-      rotating(30000,function(){
+      rotating(20000,function(){
         snake(30000,function(){
           check(30000,function(){
             moire(20000,function(){

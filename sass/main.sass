@@ -2,6 +2,10 @@
 
 @import reset
 
+@keyframes spin
+  100% 
+    transform: rotate(-360deg) 
+
 
 body
   background-color: black
@@ -264,9 +268,20 @@ main
   #rotating
 
     #circle
-      width : 100px
-      height : 100px 
-      color: red 
+      width : 200px
+      height : 200px 
+      //background-color: blue
+      animation: spin 4s linear infinite
+
+
+      span 
+        font: 52px Monaco, MonoSpace
+        height: 50%
+        position: absolute
+        width: 40px
+        left: calc(50% - 20px)
+        top: 0
+        transform-origin: bottom center
 
      
 

@@ -34,7 +34,7 @@ function greets(callback){
     marquee.setAttribute("truespeed", "");
     marquee.setAttribute("loop", "1");
     marquee.setAttribute("scrolldelay", 16);
-    var marqueetoprand = Math.round(Math.random() * (600 - 10) + 10);
+    var marqueetoprand = Math.round(Math.random() * (500 - 10) + 10);
     var scrollamountrand = Math.floor(Math.random() * (15 - 5) + 5);
 
     marquee.setAttribute("scrollamount", scrollamountrand);

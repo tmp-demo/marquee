@@ -6,9 +6,7 @@ function rotating(callback){
   //effect last for 10 seconds
   setTimeout(function(){
     container.classList.toggle("hidden");
-    callback;
-  }, 300000);
-
-  
+    callback();
+  }, 10000);
 
 }

@@ -33,6 +33,21 @@ var noise=[
   [-1, 0],
   [0, 1],
   [0, 1],
+  [1,-1],
+  [0, -1],
+  [-1, 0],
+  [0, 1],
+  [0, 1],
+  [1,-1],
+  [0, -1],
+  [-1, 0],
+  [0, 1],
+  [0, 1],
+  [1,-1],
+  [0, -1],
+  [-1, 0],
+  [0, 1],
+  [0, 1],
 
 ]
 
@@ -83,6 +98,17 @@ var noise=[
           horiz.setAttribute("scrollamount", parseInt(horiz.getAttribute("scrollamount")) + parseInt(noise[j][1])*3);
           j++;
         }, 1000)
+
+        setTimeout(function(){
+          vert.setAttribute("scrollamount",10+10*Math.random());
+          vert.setAttribute("direction", Math.random() < 0.5 ? "left" : "right" );
+          console.log(vert.getAttribute("behavior"));
+          vert.setAttribute("behavior","scroll");
+          console.log("->"+ vert.getAttribute("behavior"));
+          horiz.setAttribute("scrollamount",10+10*Math.random());
+          horiz.setAttribute("direction", Math.random() < 0.5 ? "up": "down" );
+          horiz.setAttribute("behavior","scroll");
+        }, time-3000); 
 
       }, i*100);
 

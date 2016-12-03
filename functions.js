@@ -17,13 +17,16 @@ function keypresstamere(e){
 window.addEventListener("keypress", keypresstamere);
 
 function start(){
+
+  snake(20000,function(){});
+  /*
   disclaimer(function(){
-    title(1000,function(){
+    title(5000,function(){
       bottomScroller(function(){});
-      rotating(1000,function(){
-        snake(1000,function(){
-          check(1000,function(){
-            moire(1000,function(){
+      rotating(20000,function(){
+        snake(5000,function(){
+          check(5000,function(){
+            moire(5000,function(){
               greets(function(){
                 starfield(function(){console.log('END');});
               });
@@ -33,4 +36,5 @@ function start(){
       });
     });
   });
+*/
 }

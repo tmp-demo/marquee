@@ -320,7 +320,7 @@ main {
   main #rotating #circle {
     width: 200px;
     height: 200px;
-    animation: spin 4s linear infinite; }
+    animation: spin 3s linear infinite; }
     main #rotating #circle span {
       font: 52px Monaco, MonoSpace;
       height: 50%;

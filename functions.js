@@ -17,6 +17,10 @@ function keypresstamere(e){
 window.addEventListener("keypress", keypresstamere);
 
 function start(){
+
+  rotating(function(){});
+
+/*
   disclaimer(function(){
     title(function(){
       bottomScroller(function(){});
@@ -33,4 +37,5 @@ function start(){
       });
     });
   });
+*/
 }

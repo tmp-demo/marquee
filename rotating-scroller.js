@@ -6,12 +6,10 @@ function rotating(callback){
   //effect last for 10 seconds
   setTimeout(function(){
     container.classList.toggle("hidden");
-    callback;
-  }, 300000);
+    callback();
+  }, 30000);
 
 
   var text = "Behold ! You are currently viewing the one and only CSS animation, and it's only a rotation !";
-
-
 
 }

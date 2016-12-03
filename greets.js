@@ -3,16 +3,16 @@ function greets(callback){
   document.getElementById('greets').classList.toggle('hidden');
 
   var greetz = [
-    "maman",
-    "bière",
-    "satan",
-    "bière",
-    "netscape",
-    "cookie<3",
-    "rm -rf /",
-    "die()",
-    "how do I stop this shit?",
-    "kill *"
+    "LNX",
+    "X MEN",
+    "PopSY",
+    "CoCOOn",
+    "Still",
+    "TRBL",
+    "Undeed Sceners",
+    "Flush",
+    "BRS",
+    "Poo-brain"
   ];
 
   var greetended = 0;

@@ -27,13 +27,11 @@ function thisistheend(){
 
 function start(){
 
-  snake(20000,function(){});
-  /*
   disclaimer(function(){
     title(5000,function(){
       bottomScroller(function(){});
       rotating(20000,function(){
-        snake(5000,function(){
+        snake(20000,function(){
           check(5000,function(){
             moire(5000,function(){
               greets(function(){

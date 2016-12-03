@@ -31,14 +31,14 @@ function start(){
 
 /*
   disclaimer(function(){
-    title(function(){
+    title(8000,function(){
       bottomScroller(function(){});
-      rotating(function(){
-        snake(function(){
-          check(function(){
-            moire(function(){
+      rotating(30000,function(){
+        snake(30000,function(){
+          check(30000,function(){
+            moire(20000,function(){
               greets(function(){
-                starfield(1000,function(){
+                starfield(20000,function(){
                   thisistheend();
                 ;});
               });

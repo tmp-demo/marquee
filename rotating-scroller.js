@@ -7,7 +7,7 @@ function rotating(time,callback){
   setTimeout(function(){
     container.classList.toggle("hidden");
     callback();
-  }, 10000);
+  }, time);
 
 
   var text = "Behold ! You are currently viewing the one and only CSS animation, and it's only a rotation !";

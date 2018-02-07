@@ -1,5 +1,3 @@
-# Sass compiler
-koala-config.json
 main.css
 
 # =========================
@@ -51,4 +49,8 @@ $RECYCLE.BIN/
 *.msp
 
 # Windows shortcuts
+<<<<<<< HEAD
 *.lnk
+=======
+*.lnk
+>>>>>>> 8e778adf0067abd48cac05eb8aac8a52324a3eb6

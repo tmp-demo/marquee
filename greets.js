@@ -57,6 +57,4 @@ function greets(callback){
 
   });
 
-  document.getElementById('greets').classList.toggle('hidden');
-  callback();
 }

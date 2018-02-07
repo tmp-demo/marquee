@@ -5,7 +5,7 @@ function bottomScroller(calback){
     "Mozilla Developer Network states about <marquee> that :",
     "This feature is obsolete.",
     "Although it may still work in some browsers, [...] Try to avoid using it.",
-    "For you pleasure, coded by Gruck and Sascha, sound by Nekozilla.",
+    "For you pleasure, coded by Gruck and Void, sound by Nekozilla.",
     "Please note that this demo may not work correctly on Netscape.",
     "Congratulations, you read the scroller this far, you won a penis enlargment kit,",
     "Do you like it so far? If you do, please imitate Chewbacca's scream right now."
